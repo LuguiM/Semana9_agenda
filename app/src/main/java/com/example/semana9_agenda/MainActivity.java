@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         return confirmacion.create();
     }
     public void obtenerDatos(){
-        db = new DB(MainActivity.this, "", null, 1);
+        db = new BD(MainActivity.this, "", null, 1);
         c = db.consultarUsuarios();
         if(c.moveToFirst()){
 
