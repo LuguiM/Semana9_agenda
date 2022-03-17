@@ -21,6 +21,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    BD db;
+    public Cursor c;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -125,8 +128,7 @@ public class MainActivity extends AppCompatActivity {
 // TODO Auto-generated method stub
                 db.eliminarUsuario( c.getString(0) );
                 dialog.cancel();
-                Toast.makeText(MainActivity.this, "El registro se elimino
-                        satisfactoriamente.", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "El registro se elimino satisfactoriamente.", Toast.LENGTH_LONG).show();
             }
         });
 
