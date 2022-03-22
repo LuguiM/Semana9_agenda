@@ -1,7 +1,7 @@
 package com.example.semana9_agenda;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.app.Activity;
+
 
 import android.content.Intent;
 
@@ -38,37 +38,35 @@ public class agregar_amigos extends AppCompatActivity {
 
             if (accion.equals("modificar")) {
 
-                id = bundle.getString("id");
+                id = String.valueOf(bundle.getInt("id"));
 
 
 
-                String user[] = bundle.getStringArray("user");
+                String[] user = bundle.getStringArray("user");
 
 
 
                 TextView tempVal = (TextView) findViewById(R.id.txtnombre);
 
-                tempVal.setText(user[0].toString());
+                tempVal.setText(user[0]);
 
 
 
                 tempVal = (TextView) findViewById(R.id.txtdireccion);
 
-                tempVal.setText(user[1].toString());
+                tempVal.setText(user[1]);
 
 
 
                 tempVal = (TextView) findViewById(R.id.txtTelefono);
 
-                tempVal.setText(user[2].toString());
+                tempVal.setText(user[2]);
 
             }
 
         }catch (Exception e){
 
-            Toast.makeText(agregar_amigos.this, "Error: "+ e.getMessage().toString(),
-
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(agregar_amigos.this, "Error:12 "+ e.getMessage(), Toast.LENGTH_LONG).show();
 
         }
 
@@ -108,17 +106,15 @@ public class agregar_amigos extends AppCompatActivity {
 
 
 
-                    Intent imostrar= new Intent(agregar_amigos.this,
-
-                            MainActivity.class);
+                    Intent imostrar= new Intent(agregar_amigos.this, MainActivity.class);
 
             startActivity(imostrar);
 
         }catch(Exception ex){
 
-            Toast.makeText(agregar_amigos.this, "Error: "+
+            Toast.makeText(agregar_amigos.this, "Error1: "+
 
-                    ex.getMessage().toString(), Toast.LENGTH_LONG).show();
+                    ex.getMessage(), Toast.LENGTH_LONG).show();
 
         }
 
