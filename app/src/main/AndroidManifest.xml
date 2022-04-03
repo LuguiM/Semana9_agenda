@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Semana9_agenda"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".agregar_agenda"
+            android:exported="false" />
+        <activity
             android:name=".vista"
             android:exported="false" />
         <activity
