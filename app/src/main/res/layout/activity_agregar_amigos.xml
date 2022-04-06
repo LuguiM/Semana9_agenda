@@ -73,4 +73,16 @@
         android:layout_marginTop="59dp"
         android:text="@string/guardar_amigo"
         android:onClick="guardar_amigo"/>
+
+    <Button
+        android:id="@+id/btBase2"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:layout_marginBottom="99dp"
+        android:text="Menu2" />
 </RelativeLayout>
